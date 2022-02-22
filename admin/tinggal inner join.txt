@@ -1,0 +1,5 @@
+$sqlquery = "SELECT pelanggan.*, sparepart.*, keuangan.* FROM keuangan keuangan 
+									JOIN pelanggan pelanggan
+									ON keuangan.no_pelanggan = pelanggan.no_pelanggan 
+									JOIN sparepart sparepart 
+									ON keuangan.no_sparepart = sparepart.no_sparepart ORDER BY keuangan.no_pelanggan ASC";
